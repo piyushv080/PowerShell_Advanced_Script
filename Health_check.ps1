@@ -1,5 +1,5 @@
 Write-Host "Developed by Piyush Verma" -ForegroundColor Gray
-$serverlist = "C:\Users\id881653\OneDrive - Proximus\Desktop\health_check\nbu_netops_server.txt"
+$serverlist = "C:\health_check\nbu_netops_server.txt"
 #server_list 
 $Servers = Get-Content -Path $serverlist
 # Intializing Array to store the object  
@@ -168,16 +168,16 @@ $header = @"
  #Save as CSV file  
  #$Array | Export-Csv -Path C:\Users\id881653\OneDrive - Proximus\Desktop\health_check\nbu_results.csv -NoTypeInformation
  #Save as Html File  
- $output | out-file C:\Users\id881653\OneDrive - Proximus\Desktop\health_check\nbu_netops_server.txt\nbu_ccv.html
+ $output | out-file C:\nbu_netops_server.txt\nbu_ccv.html
  }
 
 <#Send email functionality from below line,  
-$From = "piyush.verma.ext@proximus.com"
-$To = "piyush.verma.ext@proximus.com"
-#$Cc = "CC@gmail.com"
-$Subject = "[Servers Health Report] $(Get-Date -Format "yyyy-MM-dd")|| Netops Server Report"
-$SMTPServer = "mailout.int.belbone.be"
-$SMTPPort = "25"
+$From = ""
+$To = ""
+#$Cc = ""
+$Subject = "[Servers Health Report] $(Get-Date -Format "yyyy-MM-dd")|| Server Report"
+$SMTPServer = ""
+$SMTPPort = ""
 $Body = $output
 Send-MailMessage -From $From -to $To  -Subject $Subject -BodyAsHtml -Body $Body -SmtpServer $SMTPServer -Port $SMTPPort
 #-Credential $Credential
