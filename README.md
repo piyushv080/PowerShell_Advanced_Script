@@ -93,14 +93,3 @@ Contributions, improvements, and bug reports are welcome.
 
 Maintained by @piyushv080 (https://github.com/piyushv080).  
 Experience: worked on automation projects across both service and product industries — building scripts and tools used for operational health checks, provisioning, capacity management, and deployment automation.
-
-If you want the README tailored further (more examples, inline parameter reference for each script, or a generated docs folder), tell me which format you prefer and I can update it.
-
-## License
-
-Specify a license for this repository (e.g., MIT) — add a LICENSE file to make usage terms clear.
-
-## Support / Issues
-
-Open issues in the repo for bugs, feature requests, or support:
-https://github.com/piyushv080/PowerShell_Advanced_Script/issues
